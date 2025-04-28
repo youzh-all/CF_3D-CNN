@@ -1,7 +1,7 @@
 # Deep Learning Model Comparison for Tomato Genotype Classification Based on Chlorophyll Fluorescence Data
 
 ## Abstract
-This research compares the performance of various deep learning models for classifying tomato genotypes using chlorophyll fluorescence data. Through comprehensive implementation and evaluation of LSTM, 1D-CNN, and 3D-CNN models, we identified 3D-CNN as the optimal model for this classification task.
+The objective of this study is to develop deep learning models for the efficient classification of tomato genotypes, in which mutations were introduced into the SlGA20ox gene using CRISPR-Cas9, based on chlorophyll fluorescence data, and to compare their performance. Through comprehensive implementation and evaluation of LSTM, 1D-CNN, and 3D-CNN models, we identified 3D-CNN as the most suitable model for this classification task.
 
 ## Project Structure
 
@@ -9,7 +9,6 @@ This research compares the performance of various deep learning models for class
 .
 ├── dataset/                  # Dataset storage directory
 ├── evaluation_results/       # Model evaluation results directory
-├── model_*.h5               # Trained model weight files
 ├── make_dataset.py          # Dataset generation script
 ├── roi_png_to_npy.py        # PNG to NPY conversion script
 ├── cal_raw_to_param.py      # Raw data to parameter conversion
@@ -97,20 +96,20 @@ Key hyperparameters for each model:
 ### LSTM
 - Learning rate: 0.001
 - Batch size: 32
-- Epochs: 100
+- Epochs: 500
 - LSTM units: 128
 
 ### 1D-CNN
 - Learning rate: 0.001
 - Batch size: 32
-- Epochs: 100
+- Epochs: 500
 - Filters: [32, 64, 128]
 - Kernel sizes: [3, 3, 3]
 
 ### 3D-CNN
 - Learning rate: 0.001
 - Batch size: 16
-- Epochs: 100
+- Epochs: 500
 - Filters: [32, 64, 128]
 - Kernel sizes: [(3,3,3), (3,3,3), (3,3,3)]
 
@@ -125,8 +124,7 @@ Results are saved in the `evaluation_results` directory, including:
 
 
 ## Contributors
-- [Your Name](your_github_profile_link)
-- [Contributor 2](contributor_2_github_profile_link)
+
 
 ## Acknowledgments
-This research was supported by [Institution/Grant Number]. 
+This research was funded by the National Research Foundation of Korea (NRF) grant from the Ministry of Science and ICT (MSIT), Republic of Korea (RS-2024-00407469 and RS-2025-00517964).
