@@ -1,4 +1,4 @@
-# Deep Learning Model Comparison for Tomato Genotype Classification Based on Chlorophyll Fluorescence Data
+# 3D-CNN(Convolutional Neural Network) Model Comparison for Tomato Genotype Classification Based on Chlorophyll Fluorescence Data
 
 ## Abstract
 The objective of this study is to develop deep learning models for the efficient classification of tomato genotypes, in which mutations were introduced into the SlGA20ox gene using CRISPR-Cas9, based on chlorophyll fluorescence data, and to compare their performance. Through comprehensive implementation and evaluation of LSTM, 1D-CNN, and 3D-CNN models, we identified 3D-CNN as the most suitable model for this classification task.
